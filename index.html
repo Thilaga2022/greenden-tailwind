@@ -16,18 +16,29 @@
 
         <h1 class="font-bold font-serif text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-5 h-5 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-5 h-5 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
 
-        <ul class="flex gap-2 text-gray-500 hidden md:flex cursor-pointer">
+        <ul class="flex hidden gap-2 text-gray-500  md:flex cursor-pointer">
             <li class="text-black cursor-default">Home</li>
             <li class="hover:underline hover:text-black"><a href="products.html">Products</a></li>
             <li class="hover:underline hover:text-black"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <!-- Side nav -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 " style="width:50% ;height:100vh;right: -50%;">
+        <div id="text-right" class="p-5 text-right cursor-pointer" >
+            <p id="close-nav">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-500  cursor-pointer">
+            <li class="text-black cursor-default">Home</li>
+            <li class="hover:underline hover:text-black"><a href="products.html">Products</a></li>
+            <li class="hover:underline hover:text-black"><a href="contact.html">Contact</a></li>
+        </ul>
+    </section>
 
     <!--Header Section-->
     <section class="p-4 bg-green-100 flex justify-center items-center ">
@@ -128,19 +139,27 @@
         </h2>
         <div class="grid justify-center text-white m-5 p-5">
             <div class="bg-green-900 p-5 container mb-2">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ut minus eius corrupti inventore repellendus voluptates quidem mollitia. Est aspernatur nihil ad fugit delectus dolorum perspiciatis tempore iste quisquam sint.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ut minus eius corrupti inventore
+                    repellendus voluptates quidem mollitia. Est aspernatur nihil ad fugit delectus dolorum perspiciatis
+                    tempore iste quisquam sint.</p>
                 <p class="font-bold text-yellow-300">John Mathew</p>
             </div>
             <div class="bg-green-900 p-5 container mb-2">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ut minus eius corrupti inventore repellendus voluptates quidem mollitia. Est aspernatur nihil ad fugit delectus dolorum perspiciatis tempore iste quisquam sint.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ut minus eius corrupti inventore
+                    repellendus voluptates quidem mollitia. Est aspernatur nihil ad fugit delectus dolorum perspiciatis
+                    tempore iste quisquam sint.</p>
                 <p class="font-bold text-yellow-300">Bella David</p>
             </div>
             <div class="bg-green-900 p-5 container mb-2">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ut minus eius corrupti inventore repellendus voluptates quidem mollitia. Est aspernatur nihil ad fugit delectus dolorum perspiciatis tempore iste quisquam sint.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ut minus eius corrupti inventore
+                    repellendus voluptates quidem mollitia. Est aspernatur nihil ad fugit delectus dolorum perspiciatis
+                    tempore iste quisquam sint.</p>
                 <p class="font-bold text-yellow-300">Beth</p>
             </div>
             <div class="bg-green-900 p-5 container mb-2">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ut minus eius corrupti inventore repellendus voluptates quidem mollitia. Est aspernatur nihil ad fugit delectus dolorum perspiciatis tempore iste quisquam sint.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ut minus eius corrupti inventore
+                    repellendus voluptates quidem mollitia. Est aspernatur nihil ad fugit delectus dolorum perspiciatis
+                    tempore iste quisquam sint.</p>
                 <p class="font-bold text-yellow-300">Ribacca</p>
             </div>
         </div>
@@ -150,7 +169,8 @@
     <div class="text-center p-3">
         <h2 class="text-3xl font-bold mb-2">Join our News Letter</h2>
         <p class="text-gray-600">Signup for our Email newspaper to get exclusive discounts, updates and more</p>
-        <input type="email" name="" id="" placeholder="Enter Your Email Address Here.. " class="mt-2 border border-black p-2" style="width: 80%;"><br>
+        <input type="email" name="" id="" placeholder="Enter Your Email Address Here.. "
+            class="mt-2 border border-black p-2" style="width: 80%;"><br>
         <button class="bg-black text-white underline p-2 mt-2">Subscribe</button>
     </div>
     <!--Footer Section-->
@@ -159,6 +179,13 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, tempora?</p>
         <p>@ 2021 Greenden.com</p>
     </div>
+
+    <!-- Script -->
+
+    <script src="script.js">
+
+
+    </script>
 
 </body>
 
